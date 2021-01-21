@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kraft.Controller">
+<AnchorPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.MainAppStageController">
    <children>
       <AnchorPane prefHeight="543.0" prefWidth="862.0" style="-fx-border-radius: 30px;">
          <children>
@@ -15,7 +15,7 @@
                         <Font name="Poor Richard" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="826.0" layoutY="-2.0" prefHeight="46.0" prefWidth="33.0" style="-fx-background-color: #028a8a; -fx-text-fill: white; -fx-text-alignment: center;" text="  X" textAlignment="CENTER">
+                  <Label fx:id="closeLabel" layoutX="826.0" layoutY="-2.0" prefHeight="46.0" prefWidth="33.0" style="-fx-background-color: #028a8a; -fx-text-fill: white; -fx-text-alignment: center;" text="  X" textAlignment="CENTER" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font name="Poor Richard" size="24.0" />
                      </font>

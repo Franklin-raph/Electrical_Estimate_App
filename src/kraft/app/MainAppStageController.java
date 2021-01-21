@@ -1,0 +1,31 @@
+package kraft.app;
+
+import kraft.app.util.Handlers;
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+
+public class MainAppStageController {
+    @FXML
+    private Label closeLabel;
+
+    public void initialize() {
+        Platform.runLater(() -> {
+            addHandlersForClose();
+        });
+    }
+
+    private void addHandlersForClose() {
+        closeLabel.setOnMouseEntered(event -> {
+            Handlers.getInstance().handleMouseEntered(closeLabel);
+        });
+
+    closeLabel.setOnMouseExited(event -> {
+                Handlers.getInstance().handleMouseExited(closeLabel);
+            });
+
+    closeLabel.setOnMouseClicked(event -> {
+                Handlers.getInstance().handleClose();
+            });
+        }
+}

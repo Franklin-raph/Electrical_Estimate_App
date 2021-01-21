@@ -1,6 +1,6 @@
 module Electrical.Estimate.App {
-    requires javafx.fxml;
     requires javafx.controls;
+    requires javafx.fxml;
 
-    opens com.kraft;
+    opens kraft.app;
 }
