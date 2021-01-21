@@ -1,5 +1,6 @@
 package kraft.app;
 
+import javafx.scene.layout.AnchorPane;
 import kraft.app.util.Handlers;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -9,9 +10,14 @@ public class MainAppStageController {
     @FXML
     private Label closeLabel;
 
+    @FXML
+    private AnchorPane topPane, mainPane;
+
     public void initialize() {
         Platform.runLater(() -> {
             addHandlersForClose();
+            topPane.prefWidthProperty().bindBidirectional(mainPane.prefWidthProperty());
+            //topPane.fitWidthProperty().bind(videoPane.widthProperty());
         });
     }
 
