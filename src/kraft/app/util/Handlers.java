@@ -57,7 +57,7 @@ public class Handlers {
      */
     public void handleMouseEntered(Label closeLabel) {
         defaultColorLabel_X = closeLabel.getStyle();
-        closeLabel.setStyle("-fx-background-color: #d91e18; -fx-text-fill: white");
+        closeLabel.setStyle("-fx-background-color: #a80000; -fx-text-fill: white");
     }
 
     /*

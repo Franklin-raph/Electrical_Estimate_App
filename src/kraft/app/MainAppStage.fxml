@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.MainAppStageController">
    <children>
-      <AnchorPane fx:id="mainPane" prefHeight="543.0" prefWidth="862.0" style="-fx-border-radius: 30px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="mainPane" prefHeight="543.0" prefWidth="862.0" style="-fx-background-color: #00b9b9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane fx:id="topPane" style="-fx-background-color: #028a8a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -21,7 +22,11 @@
                      </font>
                   </Label>
                </children>
+               <effect>
+                  <DropShadow height="151.57" radius="37.3925" spread="0.05" width="0.0" />
+               </effect>
             </AnchorPane>
-         </children></AnchorPane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
