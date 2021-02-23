@@ -15,13 +15,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         primaryStage.initStyle(StageStyle.UNDECORATED);
-//        primaryStage.initStyle( StageStyle.TRANSPARENT);
         Parent root = FXMLLoader.load(getClass().getResource("MainAppStage.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/kraft/app/image/kr.png")));
-        ResizeHelper.addResizeListener(primaryStage, 600, 450, Double.MAX_VALUE, Double.MAX_VALUE);
-        //WindowStyle.allowDrag(root, primaryStage);
     }
 
 
