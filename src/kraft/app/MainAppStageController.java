@@ -34,4 +34,16 @@ public class MainAppStageController {
                 Handlers.getInstance().handleClose();
             });
         }
+
+        public void CreateNewProject(){
+
+        }
+
+        public void About(){
+
+        }
+
+        public void OpenProject(){
+
+        }
 }
