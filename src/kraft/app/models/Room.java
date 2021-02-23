@@ -3,10 +3,12 @@ package kraft.app.models;
 import kraft.app.models.enums.Fitting;
 import kraft.app.models.enums.Rooms;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Room {
+public class Room implements Serializable {
+    private static final long serialversionUID = 10L;
     private Rooms roomType;
     private List<Fitting> fittings;
 

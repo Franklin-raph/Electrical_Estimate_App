@@ -1,9 +1,11 @@
 package kraft.app.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Floor {
+public class Floor implements Serializable {
+    private static final long serialversionUID = 50L;
     private int floorLevel;
     private List<Room> rooms;
 

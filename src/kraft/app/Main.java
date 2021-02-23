@@ -11,6 +11,7 @@ import kraft.app.util.ResizeHelper;
 
 public class Main extends Application {
 
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         primaryStage.initStyle(StageStyle.UNDECORATED);
