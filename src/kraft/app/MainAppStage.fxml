@@ -44,7 +44,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="360.0" layoutY="392.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #00b9b9;" text="Open Project" textFill="#1e1e1e">
+            <Button layoutX="353.0" layoutY="392.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #00b9b9;" text="Open Project" textFill="#1e1e1e">
                <font>
                   <Font size="16.0" />
                </font>
@@ -60,7 +60,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <FontAwesomeIconView glyphName="PLUS" layoutX="341.0" layoutY="369.0" />
+            <FontAwesomeIconView glyphName="PLUS" layoutX="346.0" layoutY="366.0" />
+            <FontAwesomeIconView glyphName="FOLDER" layoutX="346.0" layoutY="414.0" />
          </children>
       </AnchorPane>
    </children>
