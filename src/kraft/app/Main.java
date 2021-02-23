@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import kraft.app.util.ResizeHelper;
 
 public class Main extends Application {
 
@@ -15,7 +14,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        Parent root = FXMLLoader.load(getClass().getResource("MainAppStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ui/home/HomeStage1.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/kraft/app/image/kr.png")));

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00b9b9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.home.HomeStageController1">
+   <children>
+      <AnchorPane fx:id="topPane" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #028a8a;">
+         <children>
+            <Label layoutX="12.0" layoutY="5.0" prefHeight="43.0" prefWidth="57.0" text="Kraft" textFill="WHITE">
+               <font>
+                  <Font name="Poor Richard" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="closeLabel" layoutX="570.0" prefHeight="54.0" prefWidth="33.0" text="  X" textFill="WHITE">
+               <font>
+                  <Font name="Poor Richard" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="206.0" fitWidth="213.0" layoutX="220.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/kraftFront.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView glyphName="PLUS" layoutX="226.0" layoutY="333.0" size="13" />
+      <FontAwesomeIconView glyphName="FOLDER" layoutX="250.0" layoutY="371.0" size="13" />
+      <Button layoutX="236.0" layoutY="313.0" mnemonicParsing="false" onAction="#CreateNewProject" prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #00b9b9;" text="Create New Project">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="264.0" layoutY="350.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #00b9b9;" text="Open Project">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="527.0" layoutY="366.0" mnemonicParsing="false" onAction="#About" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #00b9b9;" text="About">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
