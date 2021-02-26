@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import kraft.app.util.FileManager;
 import kraft.app.util.Handlers;
 import kraft.app.util.ResizeHelper;
+import kraft.app.util.WindowStyle;
 
 import java.io.File;
 import java.io.IOException;
@@ -52,6 +53,7 @@ public class HomeStageController1 {
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
+            WindowStyle.allowDrag(root, primaryStage);
 
         }
 
