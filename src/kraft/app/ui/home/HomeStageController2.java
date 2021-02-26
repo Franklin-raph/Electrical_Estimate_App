@@ -1,14 +1,20 @@
 package kraft.app.ui.home;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Dialog;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import kraft.app.util.Handlers;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import kraft.app.util.WindowStyle;
 
 import java.io.File;
+import java.io.IOException;
 
 public class HomeStageController2 {
     @FXML
@@ -40,9 +46,13 @@ public class HomeStageController2 {
         }
 
         @FXML
-        public void CreateNewProject(){
-            Dialog dialog = new Dialog();
-            dialog.setTitle("Create new project");
+        public void CreateNewProject() throws IOException {
+            Stage primaryStage = (Stage) mainPane.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/template/TemplatePage.fxml"));
+
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            WindowStyle.allowDrag(root, primaryStage);
         }
 
         @FXML
