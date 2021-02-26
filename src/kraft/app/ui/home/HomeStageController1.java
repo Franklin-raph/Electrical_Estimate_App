@@ -52,7 +52,6 @@ public class HomeStageController1 {
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
-            ResizeHelper.addResizeListener(primaryStage, 600, 400, Double.MAX_VALUE, Double.MAX_VALUE);
 
         }
 

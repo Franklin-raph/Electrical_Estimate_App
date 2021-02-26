@@ -31,7 +31,7 @@
       </AnchorPane>
       <ImageView fitHeight="206.0" fitWidth="213.0" layoutX="220.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../image/kraftFront.png" />
+            <Image url="@../../../../resources/images/kraftFront.png" />
          </image>
       </ImageView>
       <FontAwesomeIconView glyphName="PLUS" layoutX="226.0" layoutY="333.0" size="13" />
