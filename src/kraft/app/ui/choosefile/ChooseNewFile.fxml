@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -27,11 +30,17 @@
                   <DropShadow />
                </effect>
             </AnchorPane>
-            <Label alignment="CENTER" layoutX="84.0" layoutY="84.0" prefHeight="65.0" prefWidth="426.0" text="Enter the path of the project" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Label alignment="CENTER" layoutY="118.0" prefHeight="65.0" prefWidth="426.0" text="Enter the path of the project" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Poor Richard" size="36.0" />
                </font>
             </Label>
+            <ImageView fitHeight="92.0" fitWidth="113.0" layoutX="456.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../resources/images/folder_icon.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="121.0" layoutY="255.0" prefHeight="26.0" prefWidth="356.0" />
          </children>
       </AnchorPane>
    </children>
