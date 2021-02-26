@@ -8,11 +8,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="693.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
+<AnchorPane prefHeight="693.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
    <children>
-      <AnchorPane fx:id="mainPane" layoutX="-52.0" prefHeight="693.0" prefWidth="791.0" style="-fx-background-color: #00b9b9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <AnchorPane fx:id="mainPane" layoutX="-52.0" prefHeight="693.0" prefWidth="802.0" style="-fx-background-color: #00b9b9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <AnchorPane fx:id="topPane" prefWidth="733.0" style="-fx-background-color: #028a8a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
@@ -31,9 +32,9 @@
                   <DropShadow height="151.57" radius="37.3925" spread="0.05" width="0.0" />
                </effect>
             </AnchorPane>
-            <AnchorPane layoutX="434.0" layoutY="103.0" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #123456;">
+            <AnchorPane fx:id="bungalow" layoutX="434.0" layoutY="103.0" onMouseClicked="#OnBungalowSelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
                <children>
-                  <ImageView fx:id="bungalow" fitHeight="199.0" fitWidth="317.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="199.0" fitWidth="317.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../resources/images/bungalow.jpg" />
                      </image>
@@ -55,7 +56,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="434.0" layoutY="370.0" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #123456;">
+            <AnchorPane fx:id="duplex" layoutX="434.0" layoutY="370.0" onMouseClicked="#OnDuplexSelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
                <children>
                   <ImageView fitHeight="186.0" fitWidth="316.0" layoutX="19.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -75,9 +76,9 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="59.0" layoutY="370.0" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #123456;">
+            <AnchorPane fx:id="apartment" layoutX="59.0" layoutY="370.0" onMouseClicked="#OnApartmentSelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
                <children>
-                  <ImageView fx:id="apartment" fitHeight="180.0" fitWidth="266.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="180.0" fitWidth="266.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../resources/images/apartment%20building%20(bi%20flats).jpg" />
                      </image>
@@ -95,7 +96,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="59.0" layoutY="103.0" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #123456;">
+            <AnchorPane fx:id="empty" layoutX="59.0" layoutY="103.0" onMouseClicked="#OnEmptySelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
                <children>
                   <Label layoutX="92.0" layoutY="214.0" text="Empty Project" textFill="#eee9e9">
                      <font>
@@ -109,16 +110,24 @@
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </Label>
-            <Button layoutY="653.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="395.0" text="Cancel">
+            <Button fx:id="cancel" layoutX="1.0" layoutY="653.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="653.0">
                <font>
                   <Font size="18.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button layoutX="397.0" layoutY="653.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="395.0" text="Continue">
+            <Button fx:id="Continue" layoutX="398.0" layoutY="653.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Continue" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font size="18.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
+            <Line endX="690.0" endY="1.0" layoutX="104.0" layoutY="652.0" startX="-104.0" startY="1.0" style="-fx-fill: #fff;" AnchorPane.rightAnchor="0.0" />
+            <Line endX="-100.0" endY="46.0" layoutX="497.0" layoutY="643.0" startX="-100.0" startY="6.29290771484375" style="-fx-fill: #028a8a;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="657.0" />
          </children>
       </AnchorPane>
    </children>
