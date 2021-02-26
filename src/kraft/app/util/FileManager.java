@@ -10,7 +10,7 @@ public class FileManager {
 
     }
 
-    private static FileManager getInstance() {
+    public static FileManager getInstance() {
         if (instance == null)
             instance = new FileManager();
         return instance;

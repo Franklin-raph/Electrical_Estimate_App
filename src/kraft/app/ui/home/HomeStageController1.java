@@ -6,6 +6,7 @@ import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import kraft.app.util.FileManager;
 import kraft.app.util.Handlers;
 
 import java.io.File;
@@ -41,8 +42,18 @@ public class HomeStageController1 {
 
         @FXML
         public void CreateNewProject(){
-            Dialog dialog = new Dialog();
-            dialog.setTitle("Create new project");
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Create File");
+            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
+                    "Kraft Files", "*.kr"
+            ));
+            File selectedFile = fileChooser.showSaveDialog(
+                    mainPane.getScene().getWindow()
+            );
+            if (selectedFile != null) {
+                FileManager.getInstance().setSelectedFile(selectedFile);
+
+            }
         }
 
         @FXML
@@ -60,5 +71,8 @@ public class HomeStageController1 {
             File selectedFile = fileChooser.showOpenDialog(
                     mainPane.getScene().getWindow()
             );
+            if (selectedFile != null) {
+                FileManager.getInstance().setSelectedFile(selectedFile);
+            }
         }
 }
