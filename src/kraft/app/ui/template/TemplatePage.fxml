@@ -2,12 +2,15 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
+<AnchorPane prefHeight="583.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
    <children>
-      <AnchorPane fx:id="mainPane" prefHeight="542.0" prefWidth="858.0" style="-fx-background-color: #00b9b9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="mainPane" layoutX="-52.0" prefHeight="577.0" prefWidth="739.0" style="-fx-background-color: #00b9b9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane fx:id="topPane" prefWidth="733.0" style="-fx-background-color: #028a8a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -26,6 +29,77 @@
                   <DropShadow height="151.57" radius="37.3925" spread="0.05" width="0.0" />
                </effect>
             </AnchorPane>
+            <VBox alignment="CENTER" layoutX="379.0" layoutY="161.0" prefHeight="217.0" prefWidth="350.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="412.0" AnchorPane.rightAnchor="10.0">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <ImageView fitHeight="175.0" fitWidth="234.0" layoutX="55.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/images/apartment%20building%20(bi%20flats).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutY="161.0" prefHeight="27.0" prefWidth="317.0" style="-fx-text-alignment: center;" text="Label" textAlignment="CENTER" textFill="#fffefe">
+                           <font>
+                              <Font name="Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="6.0" layoutY="282.0" prefHeight="217.0" prefWidth="317.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <ImageView fitHeight="186.0" fitWidth="316.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/images/duplex.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="83.0" layoutY="217.0" prefHeight="44.0" prefWidth="77.0" style="-fx-text-alignment: center;" text="Label" textAlignment="CENTER" textFill="#fffefe">
+                           <font>
+                              <Font name="Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="392.0" layoutY="57.0" prefHeight="217.0" prefWidth="317.0" AnchorPane.leftAnchor="412.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <ImageView fitHeight="199.0" fitWidth="317.0" layoutX="26.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../resources/images/bungalow.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#e13838" />
+                           </effect>
+                        </ImageView>
+                        <Label layoutX="114.0" layoutY="206.0" prefHeight="15.0" prefWidth="111.0" style="-fx-text-alignment: center;" text="Label" textAlignment="CENTER" textFill="#fffefe">
+                           <font>
+                              <Font name="Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="217.0" prefWidth="317.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <ImageView fitHeight="186.0" fitWidth="316.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutY="186.0" prefHeight="75.0" prefWidth="317.0" style="-fx-text-alignment: center;" text="Label" textAlignment="CENTER" textFill="#fffefe">
+                           <font>
+                              <Font name="Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
          </children>
       </AnchorPane>
    </children>

@@ -34,7 +34,7 @@
             </AnchorPane>
             <ImageView fitHeight="217.0" fitWidth="222.0" layoutX="480.0" layoutY="90.0">
                <image>
-                  <Image url="@../../image/kraftFront.png" />
+                  <Image url="@../../../../resources/images/kraftFront.png" />
                </image>
             </ImageView>
             <Button layoutX="525.0" layoutY="351.0" mnemonicParsing="false" onAction="#CreateNewProject" prefHeight="37.0" prefWidth="170.0" style="-fx-background-color: #00b9b9;" text="Create New Project" textFill="#1e1e1e">
