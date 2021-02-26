@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import kraft.app.util.WindowStyle;
 
 public class Main extends Application {
 
@@ -17,7 +18,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("ui/home/HomeStage1.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/kraft/app/image/kr.png")));
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/images/kr.png")));
+        WindowStyle.allowDrag(root, primaryStage);
     }
 
 

@@ -2,14 +2,19 @@ package kraft.app.ui.home;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.Dialog;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import kraft.app.util.FileManager;
 import kraft.app.util.Handlers;
+import kraft.app.util.ResizeHelper;
 
 import java.io.File;
+import java.io.IOException;
 
 public class HomeStageController1 {
     @FXML
@@ -41,19 +46,14 @@ public class HomeStageController1 {
         }
 
         @FXML
-        public void CreateNewProject(){
-            FileChooser fileChooser = new FileChooser();
-            fileChooser.setTitle("Create File");
-            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
-                    "Kraft Files", "*.kr"
-            ));
-            File selectedFile = fileChooser.showSaveDialog(
-                    mainPane.getScene().getWindow()
-            );
-            if (selectedFile != null) {
-                FileManager.getInstance().setSelectedFile(selectedFile);
+        public void CreateNewProject() throws IOException {
+            Stage primaryStage = (Stage) mainPane.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/template/TemplatePage.fxml"));
 
-            }
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            ResizeHelper.addResizeListener(primaryStage, 600, 400, Double.MAX_VALUE, Double.MAX_VALUE);
+
         }
 
         @FXML
