@@ -1,10 +1,13 @@
 package kraft.app.util;
 
+import kraft.app.models.enums.Projects;
+
 import java.io.File;
 
 public class FileManager {
     private static FileManager instance;
     private File selectedFile;
+    private Projects selectedProject;
 
     private FileManager() {
 
@@ -22,5 +25,13 @@ public class FileManager {
 
     public File getSelectedFile() {
         return selectedFile;
+    }
+
+    public Projects getSelectedProject() {
+        return selectedProject;
+    }
+
+    public void setSelectedProject(Projects selectedProject) {
+        this.selectedProject = selectedProject;
     }
 }
