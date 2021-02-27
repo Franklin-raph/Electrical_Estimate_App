@@ -41,7 +41,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="264.0" layoutY="350.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #00b9b9;" text="Open Project">
+      <Button layoutX="236.0" layoutY="350.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #00b9b9;" text="Open Project">
          <font>
             <Font size="14.0" />
          </font>
