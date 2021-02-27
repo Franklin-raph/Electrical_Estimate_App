@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="693.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
+<AnchorPane prefHeight="693.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
    <children>
       <AnchorPane fx:id="mainPane" layoutX="-52.0" prefHeight="693.0" prefWidth="802.0" style="-fx-background-color: #00b9b9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
@@ -41,7 +41,7 @@
                      <effect>
                         <DropShadow spread="0.25">
                            <color>
-                              <Color red="0.43421053886413574" green="0.42616960406303406" blue="0.42616960406303406" />
+                              <Color blue="0.42616960406303406" green="0.42616960406303406" red="0.43421053886413574" />
                            </color>
                         </DropShadow>
                      </effect>
@@ -104,13 +104,16 @@
                      </font>
                   </Label>
                </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </AnchorPane>
             <Label alignment="CENTER" layoutX="315.0" layoutY="56.0" prefHeight="34.0" prefWidth="154.0" text="Select Project Type" textFill="WHITE">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="cancel" layoutX="1.0" layoutY="653.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="653.0">
+            <Button fx:id="cancel" layoutX="1.0" layoutY="653.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="34.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="653.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -118,7 +121,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="Continue" layoutX="397.0" layoutY="655.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Continue" textFill="WHITE" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="653.0">
+            <Button fx:id="Continue" layoutX="398.0" layoutY="653.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="45.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Continue" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -127,7 +130,7 @@
                </cursor>
             </Button>
             <Line endX="690.0" endY="1.0" layoutX="104.0" layoutY="652.0" startX="-104.0" startY="1.0" style="-fx-fill: #fff;" AnchorPane.rightAnchor="0.0" />
-            <Line endX="-100.0" endY="46.0" layoutX="497.0" layoutY="643.0" startX="-100.0" startY="6.29290771484375" style="-fx-fill: #028a8a;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="657.0" />
+            <Line endX="-100.0" endY="40.58580017089844" layoutX="497.0" layoutY="655.4141991138458" startX="-100.0" startY="-2.914199113845825" style="-fx-fill: #028a8a;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="652.0" />
          </children>
       </AnchorPane>
    </children>

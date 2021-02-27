@@ -27,7 +27,6 @@ public class HomeStageController2 {
         Platform.runLater(() -> {
             addHandlersForClose();
             topPane.prefWidthProperty().bindBidirectional(mainPane.prefWidthProperty());
-            //topPane.fitWidthProperty().bind(videoPane.widthProperty());
         });
     }
 
