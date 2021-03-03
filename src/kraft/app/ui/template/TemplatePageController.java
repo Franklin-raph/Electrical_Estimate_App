@@ -22,6 +22,9 @@ public class TemplatePageController {
     private Label closeLabel;
 
     @FXML
+    private Label minimizeLabel;
+
+    @FXML
     private Button cancel, Continue;
 
     @FXML
@@ -53,6 +56,17 @@ public class TemplatePageController {
             Handlers.getInstance().handleClose();
         });
     }
+
+//    private void addHandlersForMinimize() {
+//        minimizeLabel.setOnMouseEntered(event -> {
+//            Handlers.getInstance().handleMouseEntered(minimizeLabel);
+//        });
+//
+//        minimizeLabel.setOnMouseExited(event -> {
+//            Handlers.getInstance().handleMouseExited(minimizeLabel);
+//        });
+//    }
+
 
 
     public void addHandlersForCancelAndContinue() {

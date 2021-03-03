@@ -6,7 +6,6 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
 import java.util.Optional;
 
 public class Handlers {
@@ -14,7 +13,6 @@ public class Handlers {
     private final Alert alert;
     private static Handlers mInstance;
 
-    //    Singleton Constructor
     public static Handlers getInstance(){
         if (mInstance == null) {
             mInstance = new Handlers();
@@ -29,16 +27,13 @@ public class Handlers {
      */
     private Handlers(){
 //    Create the alert object to handle onAction close
-        alert = new Alert(Alert.AlertType.NONE,"Are you sure you want to exit?",
-                ButtonType.YES,  ButtonType.CANCEL);
+        alert = new Alert(Alert.AlertType.NONE,"Are you sure you want to exit?",ButtonType.YES,  ButtonType.CANCEL);
         alert.setTitle("Exit");
     }
 
     public ButtonType handleClose(){
 
-
         DialogPane dialogPane = alert.getDialogPane();
-
 
         ButtonType buttonType = null;
         Optional<ButtonType> result = alert.showAndWait();
@@ -74,6 +69,12 @@ public class Handlers {
     public void handleMinimize(Stage stage){
         if(stage != null){
             stage.setIconified(true);
+        }
+    }
+
+    public void handleMaximize(Stage stage) {
+        if (stage != null) {
+            stage.setIconified(false);
         }
     }
 }
