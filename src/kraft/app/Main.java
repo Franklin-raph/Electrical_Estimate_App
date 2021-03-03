@@ -18,7 +18,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("ui/home/HomeStage1.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/images/kr.png")));
+        Image image = new Image(getClass().getResourceAsStream("/resources/images/kr.png"));
+        primaryStage.getIcons().add(image);
         WindowStyle.allowDrag(root, primaryStage);
     }
 
