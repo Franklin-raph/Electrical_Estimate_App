@@ -76,6 +76,7 @@ public class TemplatePageController {
         changeBackgroundStyle(apartment);
         changeBackgroundStyle(duplex);
         empty.setStyle("-fx-background-color:  #123456");
+        FileManager.getInstance().setSelectedProject(Projects.EMPTY);
         isSelected = true;
     }
 
@@ -85,6 +86,7 @@ public class TemplatePageController {
         changeBackgroundStyle(apartment);
         changeBackgroundStyle(duplex);
         bungalow.setStyle("-fx-background-color:  #123456");
+        FileManager.getInstance().setSelectedProject(Projects.BUNGALOW);
         isSelected = true;
     }
 
@@ -94,6 +96,7 @@ public class TemplatePageController {
         changeBackgroundStyle(bungalow);
         changeBackgroundStyle(duplex);
         apartment.setStyle("-fx-background-color:  #123456");
+        FileManager.getInstance().setSelectedProject(Projects.APARTMENT);
         isSelected = true;
     }
 
