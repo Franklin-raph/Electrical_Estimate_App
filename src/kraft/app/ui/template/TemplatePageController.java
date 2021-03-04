@@ -3,10 +3,12 @@ package kraft.app.ui.template;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import kraft.app.models.enums.Projects;
@@ -55,6 +57,10 @@ public class TemplatePageController {
         closeLabel.setOnMouseClicked(event -> {
             Handlers.getInstance().handleClose();
         });
+    }
+
+    public void minimizeLabelPressed(MouseEvent mouseEvent) {
+        Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
 
 //    private void addHandlersForMinimize() {

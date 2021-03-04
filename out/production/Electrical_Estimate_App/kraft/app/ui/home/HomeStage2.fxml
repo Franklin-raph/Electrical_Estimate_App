@@ -26,6 +26,11 @@
                         <Font name="Poor Richard" size="24.0" />
                      </font>
                   </Label>
+                  <Label id="minimizeLabel" layoutX="478.0" onMouseClicked="#minimizeLabelPressed" prefHeight="54.0" prefWidth="40.0" text="  -" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
                </children>
                <effect>
                   <DropShadow height="151.57" radius="37.3925" spread="0.05" width="0.0" />

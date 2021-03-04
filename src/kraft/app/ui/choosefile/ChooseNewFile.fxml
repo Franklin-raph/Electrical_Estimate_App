@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.choosefile.ChooseNewFileController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../util/MainAppStage.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.choosefile.ChooseNewFileController">
    <children>
       <AnchorPane fx:id="mainPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="613.0" style="-fx-background-color: #00b9b9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -22,9 +22,14 @@
                         <Font name="Poor Richard" size="24.0" />
                      </font>
                   </Label>
-                  <Label fx:id="closeLabel" layoutX="570.0" prefHeight="54.0" prefWidth="33.0" text="  X" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                  <Label fx:id="closeLabel" layoutX="570.0" prefHeight="54.0" prefWidth="40.0" text="   X" textFill="WHITE" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font name="Poor Richard" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label id="minimizeLabel" layoutX="523.0" onMouseClicked="#minimizeLabelPressed" prefHeight="54.0" prefWidth="40.0" text="  -" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
                      </font>
                   </Label>
                </children>

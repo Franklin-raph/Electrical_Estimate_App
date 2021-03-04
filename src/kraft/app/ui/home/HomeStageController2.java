@@ -1,16 +1,17 @@
 package kraft.app.ui.home;
 
+import javafx.application.Platform;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Dialog;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import kraft.app.util.Handlers;
-import javafx.application.Platform;
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import kraft.app.util.WindowStyle;
 
 import java.io.File;
@@ -43,6 +44,10 @@ public class HomeStageController2 {
                 Handlers.getInstance().handleClose();
             });
         }
+
+    public void minimizeLabelPressed(MouseEvent mouseEvent) {
+        Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
+    }
 
         @FXML
         public void CreateNewProject() throws IOException {
