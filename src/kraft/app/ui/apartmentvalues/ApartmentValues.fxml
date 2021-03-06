@@ -41,7 +41,7 @@
                   <Font name="Poor Richard" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="continu" layoutX="354.0" layoutY="368.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="41.0" prefWidth="301.0" style="-fx-background-color: #00b9b9; -fx-font-size: 20; -fx-text-fill: white;" text="Continue" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="359.5">
+            <Button fx:id="Continue" layoutX="354.0" layoutY="368.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="41.0" prefWidth="301.0" style="-fx-background-color: #00b9b9; -fx-font-size: 20; -fx-text-fill: white;" text="Continue" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="359.5">
                <font>
                   <Font size="20.0" />
                </font>

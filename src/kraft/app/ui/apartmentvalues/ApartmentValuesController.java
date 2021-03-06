@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -21,7 +22,7 @@ public class ApartmentValuesController {
     private AnchorPane mainPane, topPane;
 
     @FXML
-    private
+    private Button cancel, Continue;
 
     @FXML
     private Label closeLabel;
@@ -29,6 +30,7 @@ public class ApartmentValuesController {
     public void initialize() {
         Platform.runLater(() -> {
             addHandlersForClose();
+            addHandlersForCancelAndContinue();
             topPane.prefWidthProperty().bindBidirectional(mainPane.prefWidthProperty());
         });
     }
@@ -65,8 +67,6 @@ public class ApartmentValuesController {
     public void minimizeLabelPressed(MouseEvent mouseEvent) {
         Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
-
-
 
     @FXML
     public void onCancel() throws IOException {

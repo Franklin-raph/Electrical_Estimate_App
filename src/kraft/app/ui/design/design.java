@@ -4,6 +4,8 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -16,6 +18,9 @@ public class design {
 
     @FXML
     private AnchorPane topPane, mainPane;
+
+    @FXML
+    private TreeView<String>tree;
 
     public void initialize() {
         Platform.runLater(() -> {
@@ -50,4 +55,9 @@ public class design {
             stage.setMaximized(true);
         }
     }
+
+    TreeItem<String> treeObj = new TreeItem<>("House");
+
+
+
 }
