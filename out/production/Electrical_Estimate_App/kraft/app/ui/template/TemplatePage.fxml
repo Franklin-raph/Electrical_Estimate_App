@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="693.0" prefWidth="780.0" stylesheets="@../../util/MainAppStage.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.template.TemplatePageController">
+   <children>
+      <AnchorPane fx:id="mainPane" layoutX="-52.0" prefHeight="693.0" prefWidth="802.0" style="-fx-background-color: #00b9b9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="topPane" prefWidth="733.0" style="-fx-background-color: #028a8a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="-2.0" prefHeight="46.0" prefWidth="69.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" text="Kraft">
+                     <font>
+                        <Font name="Poor Richard" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="closeLabel" layoutX="755.0" prefHeight="46.0" prefWidth="40.0" style="-fx-background-color: #028a8a; -fx-text-fill: white; -fx-text-alignment: center;" text="   X" textAlignment="CENTER" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Poor Richard" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label id="minimizeLabel" layoutX="714.0" onMouseClicked="#minimizeLabelPressed" prefHeight="46.0" prefWidth="40.0" text="  -" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="151.57" radius="37.3925" spread="0.05" width="0.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane fx:id="bungalow" layoutX="434.0" layoutY="103.0" onMouseClicked="#OnBungalowSelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
+               <children>
+                  <ImageView fitHeight="199.0" fitWidth="317.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/images/bungalow.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.25">
+                           <color>
+                              <Color red="0.43421053886413574" green="0.42616960406303406" blue="0.42616960406303406" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="108.0" layoutY="218.0" text="Bungalow" textFill="#eee9e9">
+                     <font>
+                        <Font name="Poor Richard" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="duplex" layoutX="434.0" layoutY="370.0" onMouseClicked="#OnDuplexSelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
+               <children>
+                  <ImageView fitHeight="186.0" fitWidth="316.0" layoutX="19.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/images/duplex.jpeg" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.25" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="120.0" layoutY="214.0" text="Duplex" textFill="#eee9e9">
+                     <font>
+                        <Font name="Poor Richard" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="apartment" layoutX="59.0" layoutY="370.0" onMouseClicked="#OnApartmentSelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
+               <children>
+                  <ImageView fitHeight="180.0" fitWidth="266.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../resources/images/apartment%20building%20(bi%20flats).jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.25" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="105.0" layoutY="214.0" text="Apartment" textFill="#eee9e9">
+                     <font>
+                        <Font name="Poor Richard" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="empty" layoutX="59.0" layoutY="103.0" onMouseClicked="#OnEmptySelected" prefHeight="255.0" prefWidth="295.0" style="-fx-background-color: #028a8a;">
+               <children>
+                  <Label layoutX="92.0" layoutY="214.0" text="Empty Project" textFill="#eee9e9">
+                     <font>
+                        <Font name="Poor Richard" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="315.0" layoutY="56.0" prefHeight="34.0" prefWidth="154.0" text="Select Project Type" textFill="WHITE">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancel" layoutX="1.0" layoutY="653.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="34.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="653.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Continue" layoutX="398.0" layoutY="653.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="45.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Continue" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Line endX="690.0" endY="1.0" layoutX="104.0" layoutY="652.0" startX="-104.0" startY="1.0" style="-fx-fill: #fff;" AnchorPane.rightAnchor="0.0" />
+            <Line endX="-100.0" endY="40.58580017089844" layoutX="497.0" layoutY="655.4141991138458" startX="-100.0" startY="-2.914199113845825" style="-fx-fill: #028a8a;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="652.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -11,6 +11,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import kraft.app.util.Handlers;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 public class ProjectPage {
 
     @FXML
@@ -22,11 +25,17 @@ public class ProjectPage {
     @FXML
     private TreeView<String>tree;
 
-    public void initialize() {
+    public void initialize(URL args, ResourceBundle arg) {
         Platform.runLater(() -> {
             addHandlersForClose();
             topPane.prefWidthProperty().bindBidirectional(mainPane.prefWidthProperty());
         });
+
+
+        TreeItem<String> treeObj = new TreeItem<>("House");
+        TreeItem<String> treeObj1 = new TreeItem<>("Flats");
+        TreeItem<String> treeObj2 = new TreeItem<>("Rooms");
+        treeObj.getChildren().addAll(treeObj1,treeObj2);
     }
 
     private void addHandlersForClose() {
@@ -56,7 +65,6 @@ public class ProjectPage {
         }
     }
 
-    TreeItem<String> treeObj = new TreeItem<>("House");
 
 
 
