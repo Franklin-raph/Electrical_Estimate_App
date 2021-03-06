@@ -1,4 +1,4 @@
-#v-box{
+#tree{
 -fx-background-color: linear-gradient(to bottom, #00b8b8, #038a8a);
 }
 
@@ -10,10 +10,3 @@
 -fx-background-color: #00b9b9;
 }
 
-#continueBtn:hover{
--fx-background-color: #028a8a;
-}
-
-#cancelBtn:hover{
--fx-background-color: #028a8a;
-}
