@@ -7,39 +7,33 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00b9b9;" stylesheets="@../../util/MainAppStage.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.home.HomeStageController1">
    <children>
-      <AnchorPane fx:id="topPane" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #028a8a;">
+      <AnchorPane fx:id="topPane" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #028a8a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="12.0" layoutY="5.0" prefHeight="43.0" prefWidth="57.0" text="Kraft" textFill="WHITE">
                <font>
                   <Font name="Poor Richard" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="closeLabel" layoutX="560.0" prefHeight="54.0" prefWidth="40.0" text="   X" textFill="WHITE">
+            <Label fx:id="closeLabel" layoutX="560.0" prefHeight="54.0" prefWidth="40.0" text="   X" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font name="Poor Richard" size="24.0" />
                </font>
             </Label>
-            <Label id="minimizeLabel" layoutX="478.0" onMouseClicked="#minimizeLabelPressed" prefHeight="54.0" prefWidth="40.0" text="  -" textFill="WHITE">
+            <Label id="minimizeLabel" layoutX="519.0" onMouseClicked="#minimizeLabelPressed" prefHeight="54.0" prefWidth="40.0" text="  -" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
             </Label>
-            <AnchorPane id="maximizeLabel" layoutX="519.0" prefHeight="54.0" prefWidth="40.0">
-               <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038a8a00" height="11.0" layoutX="14.0" layoutY="23.0" stroke="WHITE" strokeType="INSIDE" width="12.0" />
-               </children>
-            </AnchorPane>
          </children>
          <effect>
             <DropShadow />
          </effect>
       </AnchorPane>
-      <ImageView fitHeight="206.0" fitWidth="213.0" layoutX="220.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="206.0" fitWidth="213.0" layoutX="220.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="69.0">
          <image>
             <Image url="@../../../../resources/images/kraftFront.png" />
          </image>
@@ -52,7 +46,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="236.0" layoutY="350.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #00b9b9;" text="Open Project">
+      <Button layoutX="236.0" layoutY="350.0" mnemonicParsing="false" onAction="#OpenProject" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #00b9b9;" text="Open Project" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="350.0">
          <font>
             <Font size="14.0" />
          </font>
@@ -60,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="527.0" layoutY="366.0" mnemonicParsing="false" onAction="#About" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #00b9b9;" text="About">
+      <Button layoutX="533.0" layoutY="368.0" mnemonicParsing="false" onAction="#About" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #00b9b9;" text="About" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="3.0">
          <font>
             <Font size="14.0" />
          </font>
