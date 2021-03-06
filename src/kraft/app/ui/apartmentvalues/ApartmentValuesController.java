@@ -13,11 +13,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import kraft.app.models.enums.StairCase;
-import kraft.app.util.FileManager;
 import kraft.app.util.Handlers;
 import kraft.app.util.WindowStyle;
 
-import java.io.File;
 import java.io.IOException;
 
 public class ApartmentValuesController {
@@ -89,7 +87,7 @@ public class ApartmentValuesController {
     public void onContinue() throws IOException {
 
         Stage primaryStage = (Stage) mainPane.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/"));
+        Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/project/ProjectPage.fxml"));
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

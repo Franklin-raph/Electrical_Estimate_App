@@ -122,13 +122,36 @@ public class TemplatePageController {
     public void onContinue() throws IOException {
         if (isSelected) {
             Stage primaryStage = (Stage) mainPane.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/apartmentvalues" +
-                    "/ApartmentValues.fxml"));
+            Parent root = createRoot();
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             WindowStyle.allowDrag(root, primaryStage);
         }
+    }
+
+    private Parent createRoot() throws IOException{
+
+        int ordinal = FileManager.getInstance().getSelectedProject().ordinal();
+        switch (ordinal) {
+            case 1:
+                    return FXMLLoader.load(getClass().getResource("/kraft/app/ui/bungalowvalues" +
+                            "/BungalowValues.fxml"));
+
+            case 2:
+                return FXMLLoader.load(getClass().getResource("/kraft/app/ui/apartmentvalues" +
+                        "/ApartmentValues.fxml"));
+
+            case 3:
+                return FXMLLoader.load(getClass().getResource("/kraft/app/ui/duplexvalues" +
+                        "/DuplexValues.fxml"));
+
+            default:
+                return FXMLLoader.load(getClass().getResource("/kraft/app/ui/project" +
+                        "/ProjectPage.fxml"));
+
+        }
+
     }
 
 }

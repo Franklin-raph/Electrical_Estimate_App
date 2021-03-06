@@ -36,7 +36,7 @@
                   <DropShadow />
                </effect>
             </AnchorPane>
-            <Label alignment="CENTER" layoutX="8.0" layoutY="54.0" prefHeight="25.0" prefWidth="604.0" text="Enter Apartment Values" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Label alignment="CENTER" layoutY="62.0" prefHeight="25.0" prefWidth="604.0" text="Enter Apartment Values" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font name="Poor Richard" size="24.0" />
                </font>
@@ -69,19 +69,19 @@
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="numOfRooms" layoutX="208.0" layoutY="237.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
-            <TextField fx:id="numOfFlats" layoutX="207.0" layoutY="181.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
-            <CheckBox blendMode="MULTIPLY" layoutX="316.0" layoutY="118.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Flats has Dining room">
+            <TextField fx:id="numOfRooms" layoutX="208.0" layoutY="237.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" />
+            <TextField fx:id="numOfFlats" layoutX="207.0" layoutY="181.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" />
+            <CheckBox fx:id="hasDiningBox" blendMode="MULTIPLY" layoutX="316.0" layoutY="118.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Flats has Dining room">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </CheckBox>
-            <CheckBox blendMode="MULTIPLY" layoutX="315.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Kitchen has store">
+            <CheckBox fx:id="kitchenHasStoreBox" blendMode="MULTIPLY" layoutX="315.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Kitchen has store">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </CheckBox>
-            <CheckBox blendMode="MULTIPLY" layoutX="315.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="231.0" text="Is all bedroom Master?">
+            <CheckBox fx:id="allIsMasterBox" blendMode="MULTIPLY" layoutX="315.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="231.0" text="Is all bedroom Master?">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
