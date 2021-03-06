@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kraft.app.ui.apartmentvalues.ApartmentValuesController">
+   <children>
+      <AnchorPane fx:id="mainPane" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="613.0" style="-fx-background-color: #00b9b9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="topPane" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: #028a8a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="12.0" layoutY="5.0" prefHeight="43.0" prefWidth="57.0" text="Kraft" textFill="WHITE">
+                     <font>
+                        <Font name="Poor Richard" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="closeLabel" layoutX="570.0" prefHeight="54.0" prefWidth="40.0" text="   X" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Poor Richard" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label id="minimizeLabel" layoutX="523.0" onMouseClicked="#minimizeLabelPressed" prefHeight="54.0" prefWidth="40.0" text="  -" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="54.0" prefHeight="25.0" prefWidth="604.0" text="Enter Apartment Values" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Poor Richard" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="continu" layoutX="354.0" layoutY="368.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="41.0" prefWidth="301.0" style="-fx-background-color: #00b9b9; -fx-font-size: 20; -fx-text-fill: white;" text="Continue" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="359.5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel" layoutX="78.0" layoutY="368.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="41.0" prefWidth="301.0" style="-fx-background-color: #00b9b9; -fx-font-size: 20; -fx-text-fill: white;" text="Cancel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="359.5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Line endX="507.5" endY="18.0" layoutX="151.0" layoutY="342.0" startX="-95.0" startY="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="359.5" />
+            <Line endX="35.75" endY="311.0" layoutX="266.0" layoutY="374.0" startX="35.75" startY="10.736547470092773" AnchorPane.bottomAnchor="0.0" />
+            <Label alignment="TOP_LEFT" layoutX="5.0" layoutY="119.0" prefHeight="27.0" prefWidth="191.0" text="How many floors are there?" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="5.0" layoutY="184.0" prefHeight="27.0" prefWidth="182.0" text="How many flats per floor?" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numOfFloors" layoutX="208.0" layoutY="122.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" />
+            <Label alignment="TOP_LEFT" layoutX="5.0" layoutY="242.0" prefHeight="27.0" prefWidth="206.0" text="How many bedrroms per flat?" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numOfRooms" layoutX="208.0" layoutY="237.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
+            <TextField fx:id="numOfFlats" layoutX="207.0" layoutY="181.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
+            <CheckBox blendMode="MULTIPLY" layoutX="316.0" layoutY="118.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Flats has Dining room">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox blendMode="MULTIPLY" layoutX="315.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Kitchen has store">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox blendMode="MULTIPLY" layoutX="315.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="231.0" text="Is all bedroom Master?">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </CheckBox>
+            <ChoiceBox fx:id="stairCaseBox" blendMode="MULTIPLY" layoutX="154.0" layoutY="302.0" prefHeight="25.0" prefWidth="125.0" />
+            <Label alignment="TOP_LEFT" layoutX="13.0" layoutY="301.0" prefHeight="27.0" prefWidth="141.0" text="Type of stair case">
+               <font>
+                  <Font name="Poor Richard" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
