@@ -126,7 +126,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="Continue" layoutX="398.0" layoutY="653.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="45.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Continue" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <Button fx:id="continu" layoutX="398.0" layoutY="653.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="45.0" prefWidth="398.0" style="-fx-background-color: #00b9b9;" text="Continue" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font size="18.0" />
                </font>

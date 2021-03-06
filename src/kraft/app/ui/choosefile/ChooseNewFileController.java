@@ -13,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import kraft.app.ui.apartmentvalues.ApartmentValuesController;
 import kraft.app.util.FileManager;
 import kraft.app.util.Handlers;
 import kraft.app.util.WindowStyle;
@@ -59,18 +60,7 @@ public class ChooseNewFileController {
 
 
     public void addHandlersForCancelAndContinue() {
-        cancel.setOnMouseEntered(event -> {
-            cancel.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
-        });
-        cancel.setOnMouseExited(event -> {
-            cancel.setStyle("-fx-background-color:  #00b9b9; -fx-text-fill: white");
-        });
-        continu.setOnMouseEntered(event -> {
-            continu.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
-        });
-        continu.setOnMouseExited(event -> {
-            continu.setStyle("-fx-background-color:  #00b9b9; -fx-text-fill: white");
-        });
+        Handlers.getInstance().onHoverHandlers(cancel, continu);
     }
 
     @FXML

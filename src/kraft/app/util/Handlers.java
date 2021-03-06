@@ -1,10 +1,7 @@
 package kraft.app.util;
 
 import javafx.application.Platform;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.DialogPane;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import java.util.Optional;
 
@@ -76,5 +73,20 @@ public class Handlers {
         if (stage != null) {
             stage.setIconified(false);
         }
+    }
+
+    public void onHoverHandlers(Button cancel, Button continu) {
+        cancel.setOnMouseEntered(event -> {
+            cancel.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
+        });
+        cancel.setOnMouseExited(event -> {
+            cancel.setStyle("-fx-background-color:  #00b9b9; -fx-text-fill: white");
+        });
+        continu.setOnMouseEntered(event -> {
+            continu.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
+        });
+        continu.setOnMouseExited(event -> {
+            continu.setStyle("-fx-background-color:  #00b9b9; -fx-text-fill: white");
+        });
     }
 }

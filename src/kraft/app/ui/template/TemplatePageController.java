@@ -27,7 +27,7 @@ public class TemplatePageController {
     private Label minimizeLabel;
 
     @FXML
-    private Button cancel, Continue;
+    private Button cancel, continu;
 
     @FXML
     private AnchorPane topPane, mainPane;
@@ -40,7 +40,7 @@ public class TemplatePageController {
     public void initialize() {
         Platform.runLater(() -> {
             addHandlersForClose();
-            addHandlersForCancelAndContinue();
+            Handlers.getInstance().onHoverHandlers(cancel, continu);
             topPane.prefWidthProperty().bindBidirectional(mainPane.prefWidthProperty());
         });
     }
@@ -75,20 +75,7 @@ public class TemplatePageController {
 
 
 
-    public void addHandlersForCancelAndContinue() {
-        cancel.setOnMouseEntered(event -> {
-        cancel.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
-       });
-        cancel.setOnMouseExited(event -> {
-            cancel.setStyle("-fx-background-color:  #00b9b9; -fx-text-fill: white");
-        });
-        Continue.setOnMouseEntered(event -> {
-            Continue.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
-        });
-        Continue.setOnMouseExited(event -> {
-            Continue.setStyle("-fx-background-color:  #00b9b9; -fx-text-fill: white");
-        });
-    }
+
 
     @FXML
     public void OnEmptySelected(){
