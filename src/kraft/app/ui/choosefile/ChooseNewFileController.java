@@ -107,7 +107,6 @@ public class ChooseNewFileController {
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             WindowStyle.allowDrag(root, primaryStage);
-            System.out.println(path);
         }
     }
 }
