@@ -63,19 +63,6 @@ public class TemplatePageController {
         Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
 
-//    private void addHandlersForMinimize() {
-//        minimizeLabel.setOnMouseEntered(event -> {
-//            Handlers.getInstance().handleMouseEntered(minimizeLabel);
-//        });
-//
-//        minimizeLabel.setOnMouseExited(event -> {
-//            Handlers.getInstance().handleMouseExited(minimizeLabel);
-//        });
-//    }
-
-
-
-
 
     @FXML
     public void OnEmptySelected(){
@@ -135,7 +122,8 @@ public class TemplatePageController {
     public void onContinue() throws IOException {
         if (isSelected) {
             Stage primaryStage = (Stage) mainPane.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/choosefile/ChooseNewFile.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/apartmentvalues" +
+                    "/ApartmentValues.fxml"));
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);

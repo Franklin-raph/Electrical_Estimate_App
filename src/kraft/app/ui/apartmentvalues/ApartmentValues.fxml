@@ -63,37 +63,31 @@
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="208.0" layoutY="122.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
+            <TextField fx:id="numOfFloors" layoutX="208.0" layoutY="122.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" />
             <Label alignment="TOP_LEFT" layoutX="5.0" layoutY="242.0" prefHeight="27.0" prefWidth="206.0" text="How many bedrroms per flat?" AnchorPane.leftAnchor="5.0">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </Label>
-            <Label alignment="TOP_LEFT" layoutX="5.0" layoutY="307.0" prefHeight="27.0" prefWidth="206.0" text="How many bedrroms per flat?" AnchorPane.leftAnchor="5.0">
-               <font>
-                  <Font name="Poor Richard" size="18.0" />
-               </font>
-            </Label>
-            <TextField layoutX="208.0" layoutY="302.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
-            <TextField layoutX="208.0" layoutY="237.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
-            <TextField layoutX="207.0" layoutY="181.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a;" />
-            <CheckBox layoutX="348.0" layoutY="118.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Flats has Dining room">
+            <TextField fx:id="numOfRooms" layoutX="208.0" layoutY="237.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" />
+            <TextField fx:id="numOfFlats" layoutX="207.0" layoutY="181.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #028a8a; -fx-text-fill: white;" />
+            <CheckBox fx:id="hasDiningBox" blendMode="MULTIPLY" layoutX="316.0" layoutY="118.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Flats has Dining room">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="348.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Kitchen has store">
+            <CheckBox fx:id="kitchenHasStoreBox" blendMode="MULTIPLY" layoutX="315.0" layoutY="177.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" text="Kitchen has store">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="348.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="231.0" text="Is all bedroom Master?">
+            <CheckBox fx:id="allIsMasterBox" blendMode="MULTIPLY" layoutX="315.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="231.0" text="Is all bedroom Master?">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
             </CheckBox>
-            <ChoiceBox layoutX="454.0" layoutY="302.0" prefHeight="25.0" prefWidth="125.0" />
-            <Label alignment="TOP_LEFT" layoutX="106.0" layoutY="317.0" prefHeight="27.0" prefWidth="206.0" text="How many bedrroms per flat?">
+            <ChoiceBox fx:id="stairCaseBox" blendMode="MULTIPLY" layoutX="154.0" layoutY="302.0" prefHeight="25.0" prefWidth="125.0" />
+            <Label alignment="TOP_LEFT" layoutX="13.0" layoutY="301.0" prefHeight="27.0" prefWidth="141.0" text="Type of stair case">
                <font>
                   <Font name="Poor Richard" size="18.0" />
                </font>
