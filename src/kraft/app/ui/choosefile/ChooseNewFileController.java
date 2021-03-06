@@ -102,7 +102,7 @@ public class ChooseNewFileController {
             FileManager.getInstance().setSelectedFile(new File(path));
 
             Stage primaryStage = (Stage) mainPane.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/design/design.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/apartmentvalues/ApartmentValues.fxml"));
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);

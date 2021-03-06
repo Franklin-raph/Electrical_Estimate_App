@@ -9,3 +9,11 @@
 #maximizeLabel:hover {
 -fx-background-color: #00b9b9;
 }
+
+#continueBtn:hover{
+-fx-background-color: #028a8a;
+}
+
+#cancelBtn:hover{
+-fx-background-color: #028a8a;
+}
