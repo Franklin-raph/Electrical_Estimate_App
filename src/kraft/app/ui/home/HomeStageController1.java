@@ -50,15 +50,6 @@ public class HomeStageController1 {
             });
         }
 
-        public void handleMaxButtonAction(){
-        Stage stage = (Stage) mainPane.getScene().getWindow();
-        if(stage.isMaximized()){
-            stage.setMaximized(false);
-        }else{
-            stage.setMaximized(true);
-            }
-        }
-
     public void minimizeLabelPressed(MouseEvent mouseEvent) {
         Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
@@ -75,7 +66,6 @@ public class HomeStageController1 {
             WindowStyle.allowDrag(root, primaryStage);
             primaryStage.setX(300);
             primaryStage.setY(0);
-
         }
 
         @FXML

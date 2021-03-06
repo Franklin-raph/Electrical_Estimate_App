@@ -63,18 +63,6 @@ public class TemplatePageController {
         Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
 
-//    private void addHandlersForMinimize() {
-//        minimizeLabel.setOnMouseEntered(event -> {
-//            Handlers.getInstance().handleMouseEntered(minimizeLabel);
-//        });
-//
-//        minimizeLabel.setOnMouseExited(event -> {
-//            Handlers.getInstance().handleMouseExited(minimizeLabel);
-//        });
-//    }
-
-
-
     public void addHandlersForCancelAndContinue() {
         cancel.setOnMouseEntered(event -> {
         cancel.setStyle("-fx-background-color: #028a8a; -fx-text-fill: white");
