@@ -73,6 +73,8 @@ public class HomeStageController1 {
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             WindowStyle.allowDrag(root, primaryStage);
+            primaryStage.setX(300);
+            primaryStage.setY(0);
 
         }
 
