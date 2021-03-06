@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -14,7 +15,6 @@ import javafx.stage.Stage;
 import kraft.app.util.FileManager;
 import kraft.app.util.Handlers;
 import kraft.app.util.WindowStyle;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -23,10 +23,11 @@ public class HomeStageController1 {
     private Label closeLabel;
 
     @FXML
-    private Label minimizeLabel;
+    private Button maxButton;
 
     @FXML
     private AnchorPane topPane, mainPane;
+
 
     public void initialize() {
         Platform.runLater(() -> {
@@ -49,13 +50,20 @@ public class HomeStageController1 {
             });
         }
 
+        public void handleMaxButtonAction(){
+        Stage stage = (Stage) mainPane.getScene().getWindow();
+        if(stage.isMaximized()){
+            stage.setMaximized(false);
+        }else{
+            stage.setMaximized(true);
+            }
+        }
+
     public void minimizeLabelPressed(MouseEvent mouseEvent) {
         Handlers.getInstance().handleMinimize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
     }
 
-    public void maximizeLabelPressed(MouseEvent mouseEvent) {
-        Handlers.getInstance().handleMaximize((Stage) ((Node) mouseEvent.getSource()).getScene().getWindow());
-    }
+
 
         @FXML
         public void CreateNewProject() throws IOException {

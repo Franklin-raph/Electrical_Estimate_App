@@ -6,9 +6,11 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
 import java.util.Optional;
 
 public class Handlers {
+
     private String defaultColorLabel_X;
     private final Alert alert;
     private static Handlers mInstance;
@@ -72,9 +74,11 @@ public class Handlers {
         }
     }
 
-    public void handleMaximize(Stage stage) {
-        if (stage != null) {
-            stage.setIconified(false);
-        }
-    }
+//    public void handleMaximize(ActionEvent event) {
+//        Stage stage = (Stage) maximizeLabel.getScene().getWindow();
+//        stage.setFullScreen(true);
+////        if (stage != null) {
+////            stage.setIconified(false);
+////        }
+//    }
 }
