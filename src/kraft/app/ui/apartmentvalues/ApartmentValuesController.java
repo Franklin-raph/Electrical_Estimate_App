@@ -89,7 +89,7 @@ public class ApartmentValuesController {
     public void onContinue() throws IOException {
 
         Stage primaryStage = (Stage) mainPane.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/apartmentvalues/ApartmentValues.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/kraft/app/ui/"));
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
