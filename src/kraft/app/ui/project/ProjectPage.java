@@ -1,4 +1,4 @@
-package kraft.app.ui.design;
+package kraft.app.ui.project;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -11,7 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import kraft.app.util.Handlers;
 
-public class design {
+public class ProjectPage {
 
     @FXML
     private Label closeLabel;
